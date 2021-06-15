@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "penggunas",
+  "info": {
+    "name": "pengguna",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "username": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "jabatan": {
+      "type": "string"
+    },
+    "categories": {
+      "via": "penggunas",
+      "collection": "category"
+    },
+    "nama": {
+      "type": "string"
+    }
+  }
+}
